@@ -7,8 +7,8 @@
 }
 
 .video-item {
-  width: 100%;
-  max-width: 560px;
+  flex: 1 1 calc(50% - 16px); /* パソコンでは横2列に配置 */
+  max-width: calc(50% - 16px);
   box-sizing: border-box;
   text-align: center;
   margin-bottom: 16px;
@@ -16,7 +16,7 @@
 
 .video-item iframe {
   width: 100%;
-  aspect-ratio: 16 / 9;
+  height: auto;
 }
 
 .video-title {
@@ -27,18 +27,8 @@
 
 @media (max-width: 768px) {
   .video-item {
-    width: 100%;
-  }
-
-  .video-item iframe {
-    width: 100%;
-    height: auto;
-  }
-}
-
-@media (max-width: 480px) {
-  .video-item {
-    width: 100%;
+    flex: 1 1 100%; /* スマホでは縦に並ぶように設定 */
+    max-width: 100%;
   }
 
   .video-item iframe {
