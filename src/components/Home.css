@@ -1,0 +1,11 @@
+.home-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* 画面全体の高さに合わせる */
+}
+
+.home-logo {
+  max-width: 80%;
+  max-height: 50%;
+}

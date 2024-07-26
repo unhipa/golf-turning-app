@@ -3,8 +3,8 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import MenuBar from './components/MenuBar';
 import PostForm from './components/PostForm';
 import PostList from './components/PostList';
+import Home from './components/Home'; // Homeコンポーネントをインポート
 
-const Home = () => <div>HOME</div>;
 const PracticeItems = () => <div>練習アイテム</div>;
 
 function App() {
