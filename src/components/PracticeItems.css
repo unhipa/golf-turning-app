@@ -7,16 +7,21 @@
 }
 
 .video-item {
-  flex: 1 1 calc(50% - 16px); /* パソコンでは横2列に配置 */
-  max-width: calc(50% - 16px);
+  width: calc(50% - 16px); /* パソコンでは横2列に配置 */
   box-sizing: border-box;
   text-align: center;
   margin-bottom: 16px;
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9アスペクト比 */
+  height: 0;
 }
 
 .video-item iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  height: auto;
+  height: 100%;
 }
 
 .video-title {
@@ -27,12 +32,7 @@
 
 @media (max-width: 768px) {
   .video-item {
-    flex: 1 1 100%; /* スマホでは縦に並ぶように設定 */
-    max-width: 100%;
-  }
-
-  .video-item iframe {
     width: 100%;
-    height: auto;
+    padding-bottom: 56.25%; /* 16:9アスペクト比 */
   }
 }
