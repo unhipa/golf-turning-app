@@ -38,8 +38,6 @@ const PracticeItems = () => {
         return (
           <div key={video.id} className="video-item">
             <iframe
-              width="560"
-              height="315"
               src={embedUrl}
               title={video.title}
               frameBorder="0"
