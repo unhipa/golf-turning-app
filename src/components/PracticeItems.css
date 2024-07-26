@@ -12,17 +12,6 @@
   text-align: center;
 }
 
-.video-thumbnail {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-  transition: transform 0.3s ease;
-}
-
-.video-thumbnail:hover {
-  transform: scale(1.05);
-}
-
 .video-title {
   margin-top: 8px;
   font-size: 16px;
